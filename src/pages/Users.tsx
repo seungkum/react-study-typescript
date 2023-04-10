@@ -1,16 +1,19 @@
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import { useForm } from "react-hook-form";
+import { usersStore } from "../stores/usersStore";
 
 function Users(props: {}) {
+    const usersState = usersStore((state) => state);
+    const user = usersState.user;
+    const users = usersState.users;
+    console.log(user, users);
+
     const userForm = useForm({
-        defaultValues: {
-            name: "min",
-            age: "20",
-        },
+        // defaultValues: { name: user.name, age: user.age },
+        defaultValues: user,
     });
     const { register } = userForm;
-    console.log(props);
     return (
         <div>
             <h3>Users</h3>
