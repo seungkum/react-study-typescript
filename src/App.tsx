@@ -1,23 +1,15 @@
 import React from "react";
+import Header from "./components/layout/Header";
+import Nav from "./components/layout/Nav";
+import Footer from "./components/layout/Footer";
 
 function App() {
     return (
         <div>
-            <header>
-                <h1>React study</h1>
-            </header>
+            <Header></Header>
             <hr />
             <div className='container'>
-                <nav className='nav'>
-                    <ul>
-                        <li>
-                            <h2>Users</h2>
-                        </li>
-                        <li>
-                            <h2>Search</h2>
-                        </li>
-                    </ul>
-                </nav>
+                <Nav></Nav>
                 <hr />
                 <section className='contents'>
                     <div>
@@ -27,7 +19,7 @@ function App() {
                 </section>
                 <hr />
             </div>
-            <footer>Copyright</footer>
+            <Footer></Footer>
         </div>
     );
 }
