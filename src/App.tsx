@@ -27,6 +27,8 @@ function App() {
                 <Footer></Footer>
             </BrowserRouter>
         </div>
+        // command shift 5 : 스샷
+        // cmd d 같은 문자열 선택
     );
 }
 
