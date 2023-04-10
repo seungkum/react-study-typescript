@@ -1,5 +1,4 @@
-function Search(props: {}) {
-    console.log(props);
+function Search() {
     return (
         <div>
             <h3>Search</h3>
